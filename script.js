@@ -156,7 +156,7 @@ contactForm.addEventListener('submit', async (e) => {
       throw new Error(data.message || 'send failed');
     }
 
-    formNote.textContent = '✓ Дякуємо! Анна зв\'яжеться з вами протягом дня.';
+    formNote.textContent = '✓ Дякуємо! Анна зв\'яжеться з вами протягом дня';
     contactForm.reset();
   } catch (err) {
     formNote.textContent = 'Не вдалося надіслати. Напишіть напряму на 06614051a@gmail.com';
