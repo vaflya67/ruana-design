@@ -1,0 +1,14 @@
+{
+  "name": "Анна Русіна — ruana design",
+  "short_name": "ruana design",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#9E1F63",
+  "background_color": "#FFF8FD",
+  "display": "standalone"
+}
