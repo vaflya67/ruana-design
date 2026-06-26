@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Анна Русіна — Графічний дизайнер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header" id="nav">
+    <a href="#top" class="header__logo">ruana<span>_design_</span></a>
+    <nav class="header__nav">
+      <a href="#about">про мене</a>
+      <a href="#works">роботи</a>
+      <a href="#services">послуги</a>
+      <a href="#contact" class="header__cta">зв'язатися</a>
+    </nav>
+    <button class="header__burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-panel" id="mobileMenu">
+    <a href="#about" class="mobile-panel__link">про мене</a>
+    <a href="#works" class="mobile-panel__link">роботи</a>
+    <a href="#services" class="mobile-panel__link">послуги</a>
+    <a href="#contact" class="mobile-panel__link">зв'язатися</a>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__copy reveal">
+          <p class="tag">Графічний дизайнер · Харків</p>
+          <h1 class="hero__title">
+            <span class="hero__line hero__line--name">Анна <em>Русіна</em></span>
+          </h1>
+          <p class="hero__text">Перетворюю сенси в стильний та креативний дизайн ☆</p>
+          <div class="hero__actions">
+            <a href="#works" class="btn btn--dark">Приклади робіт</a>
+            <a href="#contact" class="btn btn--outline">Обговорити проєкт</a>
+          </div>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="hero__frame">
+            <img src="images/anna.png" alt="Анна Русіна" class="hero__photo">
+          </div>
+          <span class="hero__badge">design ★</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="block block--about" id="about">
+      <div class="wrap">
+        <div class="block__head reveal">
+          <h2 class="heading heading--xl">Трохи про мене:</h2>
+        </div>
+        <div class="about__body reveal">
+          <p class="about__text">Привіт, мене звати Анна, мені 23 роки. Навчалась у Харкові та маю диплом бакалавра за спеціальністю «Дизайнер візуальних комунікацій». А також проходила курси графічного дизайну від MD.studio</p>
+          <p class="about__text about__cta">Гортай далі — переглянь приклади робіт і дізнайся, що саме я розробляю</p>
+          <div class="chips">
+            <a href="#services" class="chip" data-service="logo">Логотип</a>
+            <a href="#services" class="chip" data-service="identity">Айдентика</a>
+            <a href="#services" class="chip" data-service="poly">Поліграфія</a>
+            <a href="#services" class="chip" data-service="social">Соцмережі</a>
+          </div>
+          <a href="#contact" class="btn btn--dark">Написати мені</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section class="block block--works" id="works">
+      <div class="wrap">
+        <div class="block__head reveal">
+          <p class="slash">/ портфоліо</p>
+          <h2 class="heading heading--xl">Приклади <em>робіт</em></h2>
+        </div>
+        <div class="works">
+          <a href="https://www.behance.net/gallery/249243737/Velour-brand-identity" target="_blank" rel="noopener noreferrer" class="work reveal work--wide">
+            <div class="work__media"><img src="images/works/249243737.jpg" alt="Velour" loading="lazy"></div>
+            <div class="work__info">
+              <h3 class="work__name">Velour</h3>
+              <p class="work__cat">Айдентика для коктейльного бару</p>
+            </div>
+          </a>
+          <a href="https://www.behance.net/gallery/243398157/Echose-of-time-Design-identity" target="_blank" rel="noopener noreferrer" class="work reveal">
+            <div class="work__media"><img src="images/works/243398157.jpg" alt="Echo of Time" loading="lazy"></div>
+            <div class="work__info">
+              <h3 class="work__name">Echo of Time</h3>
+              <p class="work__cat">Айдентика для готелю</p>
+            </div>
+          </a>
+          <a href="https://www.behance.net/gallery/247973319/murkotun-brand-identity" target="_blank" rel="noopener noreferrer" class="work reveal">
+            <div class="work__media"><img src="images/works/247973319.gif" alt="Муркотун" loading="lazy"></div>
+            <div class="work__info">
+              <h3 class="work__name">Муркотун</h3>
+              <p class="work__cat">Айдентика корму для котів</p>
+            </div>
+          </a>
+          <a href="https://www.behance.net/gallery/248538227/Kurlyk-brand-identity" target="_blank" rel="noopener noreferrer" class="work reveal work--wide">
+            <div class="work__media"><img src="images/works/248538227.png" alt="Kurlyk" loading="lazy"></div>
+            <div class="work__info">
+              <h3 class="work__name">Kurlyk</h3>
+              <p class="work__cat">Айдентика для кафе</p>
+            </div>
+          </a>
+          <a href="https://www.behance.net/gallery/242943143/Tangerin-identyti-for-the-cafe" target="_blank" rel="noopener noreferrer" class="work reveal">
+            <div class="work__media"><img src="images/works/242943143.jpg" alt="Tangerin" loading="lazy"></div>
+            <div class="work__info">
+              <h3 class="work__name">Tangerin</h3>
+              <p class="work__cat">Айдентика для кафе фастфуду</p>
+            </div>
+          </a>
+          <a href="https://www.behance.net/gallery/204597479/Inspiration-Posters" target="_blank" rel="noopener noreferrer" class="work reveal">
+            <div class="work__media"><img src="images/works/204597479.gif" alt="Inspiration Posters" loading="lazy"></div>
+            <div class="work__info">
+              <h3 class="work__name">Inspiration Posters</h3>
+              <p class="work__cat">Постери</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / PRICE -->
+    <section class="block block--price" id="services">
+      <div class="wrap">
+        <div class="block__head reveal">
+          <p class="slash slash--light">/ що розробляю</p>
+          <h2 class="heading heading--light">Послуги та <em>вартість</em></h2>
+        </div>
+
+        <div class="svc-folder reveal" id="service-folder" data-active="0">
+
+          <div class="svc-tabs" role="tablist" aria-label="Послуги">
+            <button class="svc-tab is-active" type="button" role="tab" aria-selected="true" data-service="logo" id="tab-logo">Логотип</button>
+            <button class="svc-tab" type="button" role="tab" aria-selected="false" data-service="identity" id="tab-identity">Айдентика</button>
+            <button class="svc-tab" type="button" role="tab" aria-selected="false" data-service="poly" id="tab-poly">Поліграфія</button>
+            <button class="svc-tab" type="button" role="tab" aria-selected="false" data-service="social" id="tab-social">Соцмережі</button>
+          </div>
+
+          <div class="svc-panel">
+
+            <article class="svc-pane is-active" role="tabpanel" data-service="logo" id="service-logo" aria-labelledby="tab-logo">
+              <header class="svc-pane__head">
+                <h3 class="svc-pane__title">Логотип</h3>
+                <p class="svc-pane__desc">Створення унікального знаку, який запам'ятовується та передає характер вашого бренду</p>
+                <div class="svc-pane__badges">
+                  <span class="svc-pane__badge">від $150</span>
+                  <span class="svc-pane__badge">5–7 днів</span>
+                </div>
+              </header>
+              <div class="svc-pane__body">
+                <div class="packs">
+                  <div class="pack">
+                    <div class="pack__head">
+                      <h4 class="pack__title">Базовий пакет</h4>
+                      <span class="pack__time">5–7 робочих днів</span>
+                    </div>
+                    <ul class="pack__list">
+                      <li>Аналіз брифу та конкурентів</li>
+                      <li>Мудборд</li>
+                      <li>Підбір кольорів</li>
+                      <li>Розробка 2-х концепцій лого на вибір</li>
+                      <li>Презентація логотипу на носіях</li>
+                      <li>3 безкоштовні правки у рамках брифу</li>
+                      <li>Файли для web [PNG, JPEG, SVG]</li>
+                      <li>Файли для друку [AI, EPS, PDF]</li>
+                      <li>Аватарка для соцмереж</li>
+                    </ul>
+                  </div>
+                  <div class="pack pack--hot">
+                    <div class="pack__head">
+                      <h4 class="pack__title">Розширений пакет</h4>
+                      <span class="pack__time">8–12 робочих днів</span>
+                    </div>
+                    <ul class="pack__list">
+                      <li>Усе з базового пакету</li>
+                      <li>Розробка 3–4-х концепцій лого на вибір</li>
+                      <li>Логобук: правила використання, пропорції, шрифти, палітра</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <footer class="svc-pane__foot">
+                <a href="#process" class="svc-pane__link">етапи співпраці</a>
+              </footer>
+            </article>
+
+            <article class="svc-pane" role="tabpanel" data-service="identity" id="service-identity" aria-labelledby="tab-identity" hidden>
+              <header class="svc-pane__head">
+                <h3 class="svc-pane__title">Айдентика</h3>
+                <p class="svc-pane__desc">Комплексна візуальна система, що формує впізнаваний образ бренду та виділяє його на ринку</p>
+                <div class="svc-pane__badges">
+                  <span class="svc-pane__badge">від $300</span>
+                  <span class="svc-pane__badge">від 3 тижнів</span>
+                </div>
+              </header>
+              <div class="svc-pane__body">
+                <p class="pack__label">Що входить у розробку</p>
+                <ul class="pack__list pack__list--cols">
+                  <li>Аналіз брифу та конкурентів, мудборд</li>
+                  <li>Підбір кольорів</li>
+                  <li>Підбір шрифтів</li>
+                  <li>Розробка від 3-х концепцій лого на вибір</li>
+                  <li>Розробка носіїв айдентики</li>
+                  <li>Презентація проєкту на носіях</li>
+                  <li>3 безкоштовні правки у рамках брифу</li>
+                  <li>Файли для web [PNG, JPEG, SVG]</li>
+                  <li>Файли для друку [AI, EPS, PDF]</li>
+                  <li>Аватарка для соцмереж</li>
+                  <li>Брендбук з правилами використання стилю</li>
+                </ul>
+              </div>
+              <footer class="svc-pane__foot">
+                <a href="#process" class="svc-pane__link">етапи співпраці</a>
+              </footer>
+            </article>
+
+            <article class="svc-pane" role="tabpanel" data-service="poly" id="service-poly" aria-labelledby="tab-poly" hidden>
+              <header class="svc-pane__head">
+                <h3 class="svc-pane__title">Поліграфія</h3>
+                <p class="svc-pane__desc">Візитівки, меню, постери, пакування та інші носії — вартість залежить від виду та складності</p>
+                <div class="svc-pane__badges">
+                  <span class="svc-pane__badge">індивідуально</span>
+                </div>
+              </header>
+              <div class="svc-pane__body">
+                <p class="pack__label">Що розробляю</p>
+                <ul class="pack__list pack__list--cols">
+                  <li>Пакування</li>
+                  <li>Візитівка</li>
+                  <li>Меню</li>
+                  <li>Листівка</li>
+                  <li>Постер</li>
+                  <li>Етикетка</li>
+                  <li>Сертифікат</li>
+                  <li>Банер</li>
+                  <li>Стікерпак</li>
+                  <li>Запрошення</li>
+                  <li>Та інше</li>
+                </ul>
+              </div>
+              <footer class="svc-pane__foot">
+                <a href="#process" class="svc-pane__link">етапи співпраці</a>
+              </footer>
+            </article>
+
+            <article class="svc-pane" role="tabpanel" data-service="social" id="service-social" aria-labelledby="tab-social" hidden>
+              <header class="svc-pane__head">
+                <h3 class="svc-pane__title">Соцмережі</h3>
+                <p class="svc-pane__desc">Дизайн дописів, stories, highlights та візуал для Instagram і не тільки</p>
+                <div class="svc-pane__badges">
+                  <span class="svc-pane__badge">індивідуально</span>
+                </div>
+              </header>
+              <div class="svc-pane__body">
+                <p class="pack__label">Що розробляю</p>
+                <ul class="pack__list">
+                  <li>Дизайн допису</li>
+                  <li>Обкладинка для highlights</li>
+                  <li>Дизайн stories</li>
+                  <li>Та інше</li>
+                </ul>
+              </div>
+              <footer class="svc-pane__foot">
+                <a href="#process" class="svc-pane__link">етапи співпраці</a>
+              </footer>
+            </article>
+
+          </div>
+        </div>
+
+        <p class="price-foot price-foot--light reveal">Ціни в USD. Точний пакет і термін — після брифу. <a href="#contact">Напишіть мені</a></p>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="block block--process" id="process">
+      <div class="wrap">
+        <div class="block__head reveal">
+          <p class="slash">/ процес</p>
+          <h2 class="heading">Етапи <em>співпраці</em></h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal"><span class="step__n">01</span><div class="step__body"><h3 class="step__title">Знайомство та обговорення проєкту</h3></div></li>
+          <li class="step reveal"><span class="step__n">02</span><div class="step__body"><h3 class="step__title">Брифування / зідзвон</h3><p class="step__note">За домовленістю</p></div></li>
+          <li class="step reveal"><span class="step__n">03</span><div class="step__body"><h3 class="step__title">Внесення передоплати — 50%</h3></div></li>
+          <li class="step reveal"><span class="step__n">04</span><div class="step__body"><h3 class="step__title">Початок розробки</h3><p class="step__note">Аналіз брифу та конкурентів, підбір референсів, мудборд і дизайн</p></div></li>
+          <li class="step reveal"><span class="step__n">05</span><div class="step__body"><h3 class="step__title">Презентація дизайну з візуалізацією</h3></div></li>
+          <li class="step reveal"><span class="step__n">06</span><div class="step__body"><h3 class="step__title">Внесення правок за потреби</h3><p class="step__note">Правки вносяться у рамках брифу</p></div></li>
+          <li class="step reveal"><span class="step__n">07</span><div class="step__body"><h3 class="step__title">Фінальне узгодження</h3></div></li>
+          <li class="step reveal"><span class="step__n">08</span><div class="step__body"><h3 class="step__title">Внесення доплати — 50%</h3></div></li>
+          <li class="step reveal"><span class="step__n">09</span><div class="step__body"><h3 class="step__title">Передача готових файлів</h3><p class="step__note">У всіх необхідних форматах</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="block block--contact" id="contact">
+      <div class="wrap contact">
+        <div class="contact__left reveal">
+          <p class="slash slash--light">/ контакти</p>
+          <h2 class="heading heading--contact">
+            <span class="heading__line">Ваш перший крок до</span>
+            <span class="heading__line"><em>сильного бренду</em></span>
+          </h2>
+          <p class="contact__text">Розкажіть про проєкт — відповім протягом дня та запропоную варіанти співпраці</p>
+          <div class="contact__links">
+            <a href="mailto:06614051a@gmail.com">06614051a@gmail.com</a>
+            <a href="https://t.me/ae1in_4_g" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://www.instagram.com/ruana_design_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.behance.net/nutarusina" target="_blank" rel="noopener noreferrer">Behance</a>
+          </div>
+        </div>
+        <form id="contactForm" class="contact__form reveal" novalidate>
+          <div class="field">
+            <label for="clientName">Ваше ім'я</label>
+            <input type="text" id="clientName" name="name" class="form-input" placeholder="Владислав" required />
+          </div>
+          <div class="field">
+            <label for="clientContact">Email або Telegram</label>
+            <input type="text" id="clientContact" name="contact" class="form-input" placeholder="@username" required />
+          </div>
+          <div class="field">
+            <label for="clientMessage">Про проєкт</label>
+            <textarea id="clientMessage" name="message" class="form-input form-textarea" placeholder="Коротко опишіть задачу..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--dark btn--full" id="sendBtn">Надіслати заявку</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span class="footer__logo">ruana<span>_design_</span></span>
+      <span class="footer__copy">© 2026 Анна Русіна</span>
+      <a href="#top" class="footer__up">↑ наверх</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
