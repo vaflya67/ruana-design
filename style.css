@@ -799,10 +799,11 @@ a { color: inherit; text-decoration: none; }
   margin-top: 12px;
   font-size: 0.82rem;
   font-weight: 600;
-  color: var(--muted);
+  color: var(--heading);
   text-align: center;
   min-height: 20px;
 }
+.form-note--error { color: var(--barbie); }
 
 /* footer */
 .footer {

@@ -108,17 +108,17 @@ contactForm.addEventListener('submit', async (e) => {
 
   if (!filled) {
     formNote.textContent = 'Будь ласка, заповніть усі поля.';
-    formNote.style.color = '';
+    formNote.className = 'form-note form-note--error';
     return;
   }
 
   sendBtn.disabled = true;
   sendBtn.textContent = 'Надсилаю...';
   formNote.textContent = '';
+  formNote.className = 'form-note';
 
   if (window.location.protocol === 'file:') {
     formNote.textContent = 'Форма працює лише на опублікованому сайті (Netlify). Поки що напишіть на 06614051a@gmail.com';
-    formNote.style.color = '#FFD3F7';
     sendBtn.textContent = 'Надіслати заявку';
     sendBtn.disabled = false;
     return;
@@ -148,7 +148,6 @@ contactForm.addEventListener('submit', async (e) => {
 
     if (isActivation) {
       formNote.textContent = '✓ Майже готово! Анні надіслали лист для активації форми — потрібно натиснути посилання в Gmail.';
-      formNote.style.color = '#FFD3F7';
       contactForm.reset();
       return;
     }
@@ -158,11 +157,10 @@ contactForm.addEventListener('submit', async (e) => {
     }
 
     formNote.textContent = '✓ Дякуємо! Анна зв\'яжеться з вами протягом дня.';
-    formNote.style.color = '#FFD3F7';
     contactForm.reset();
   } catch (err) {
     formNote.textContent = 'Не вдалося надіслати. Напишіть напряму на 06614051a@gmail.com';
-    formNote.style.color = '#FFD3F7';
+    formNote.className = 'form-note form-note--error';
   } finally {
     sendBtn.textContent = 'Надіслати заявку';
     sendBtn.disabled = false;
